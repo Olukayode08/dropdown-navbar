@@ -94,51 +94,6 @@ h2{
     display: none;
   }
 }
-/* HERO SECTION */
-.hero{
-  background-image: url('hero.svg');
-  background-position: center;
-  background-size: cover;
-}
-.hero-container{
-  margin: 0 120px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.hero-text{
-  width: 100%;
-  display: flex;
-  margin: 0 20px;
-  max-width: 500px;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-h1{
-  font-size: 45px;
-  margin: 0;
-}
-p{
-  font-size: 17px;
-}
-.phone-image{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@media screen and (max-width: 1000px) {
-  .hero-container{
-    margin: 20px;
-  }
-  .phone-image{
-    display: none;
-  }
-  .hero-text{
-    align-items: center;
-    justify-content: center;
-  }
-}
 /* SUBMENU */
 .submenu {
   background: #fff;

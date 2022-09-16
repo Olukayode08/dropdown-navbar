@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {Squash as Hamburger} from 'hamburger-react'
-import logo from '../stripe.svg'
+import logo from '../stripelogo.svg'
 import sublinks from '../data'
 
 const NavBar = ({displaySubMenu, closeSubMenu}) => {
