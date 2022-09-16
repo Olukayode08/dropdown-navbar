@@ -200,7 +200,90 @@ p{
   text-decoration: none;
 }
 
-.submenu-center svg {
-  color: #000;
-  margin-right: 1rem;
+/* CARDONIC DROPDOWN NAVBAR */
+.cardonic-container{
+  margin-top: 150px;
+}
+.bigscreen-cardonic {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+.mobile-cardonic {
+  position: fixed;
+  top: 200px;
+  right: 10px;
+  z-index: 20;
+  background: #cffcff;
+  border-radius: 50%;
+}
+
+.close-cardonic {
+  position: absolute;
+  top: 200px;
+  right: 10px;
+  background: #cffcff;
+  border-radius: 50%;
+  z-index: 20;
+}
+
+.cardonic-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background: #002444;
+  height: 100vh;
+  width: 100%;
+  z-index: 10;
+}
+
+.close-mobile-cardonic {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+}
+
+.nav{
+  text-decoration: none;
+  font-size: 16px;
+  color: #002444;
+  padding: 20px;
+}
+.started{
+  background-color: #ffeaca;
+  border-radius: 20px;
+  padding: 15px 20px;
+}
+.cardonic-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-start;
+  height: 100vh;
+
+}
+.cardonic-link{
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+  padding: 40px 10px;
+}
+@media screen and (min-width: 900px) {
+  .mobile-cardonic,
+  .close-cardonic,
+  .cardonic-nav,
+  .close-mobile-cardonic {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .links {
+    display: none;
+  }
+  .bigscreen-cardonic {
+    margin: 20px;
+  }
 }

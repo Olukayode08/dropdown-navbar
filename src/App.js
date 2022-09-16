@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import Hero from "./Components/Hero";
 import NavBar from "./Components/NavBar";
 import Submenu from "./Components/Submenu";
+import NavBarTwo from './Components/NavBarTwo'
 import sublinks from './data';
 
 
@@ -30,7 +30,8 @@ function App() {
   return (
     <>
       <NavBar displaySubMenu={displaySubMenu} closeSubMenu={closeSubMenu} />
-      <Hero closeSubMenu={closeSubMenu} />
+      {/* <Hero closeSubMenu={closeSubMenu} /> */}
+      <NavBarTwo />
       <Submenu page={page} location={location} subMenu={subMenu} />
     </>
   );
