@@ -73,7 +73,6 @@ const NavBarTwo = ({closeSubMenu}) => {
                   );
                 })}
               </div>
-              ;{' '}
             </li>
             <li
               onMouseLeave={() => setSubLinkTwo(false)}

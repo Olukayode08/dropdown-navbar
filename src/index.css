@@ -272,9 +272,10 @@ h2{
   cursor: pointer;
 }
 .drop-text{
-  font-size: 13px;
+  font-size: 14px;
   flex-shrink: 0;
-  align-items: flex-start;
+  width: 80%;
+  text-align: left;
 }
 @media screen and (min-width: 800px) {
   .mobile-cardonic,
