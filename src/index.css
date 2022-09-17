@@ -165,6 +165,25 @@ h2{
   justify-content: space-between;
   margin: 0 150px;
 }
+.nav {
+  position: relative;
+  text-decoration: none;
+  font-size: 16px;
+  color: #002444;
+  padding: 20px;
+}
+.started {
+  background-color: #ffeaca;
+  border-radius: 20px;
+}
+.icon{
+  position: absolute;
+  top: 23px;
+  right: 0;
+}
+.color{
+  color: #fff;
+}
 .mobile-cardonic {
   position: fixed;
   top: 200px;
@@ -200,33 +219,64 @@ h2{
   top: -100%;
   left: -100%;
 }
-
-.nav{
-  text-decoration: none;
-  font-size: 16px;
-  color: #002444;
-  padding: 20px;
-}
-.started{
-  background-color: #ffeaca;
-  border-radius: 20px;
-  padding: 15px 20px;
-}
 .cardonic-links {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-self: flex-start;
   height: 100vh;
-
 }
 .cardonic-link{
   text-decoration: none;
-  font-size: 15px;
+  font-size: 19px;
   color: #fff;
-  padding: 40px 10px;
 }
-@media screen and (min-width: 900px) {
+.position{
+  padding: 30px 10px;
+}
+.sublink-container{
+  position: relative;
+}
+.sublink{
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: 150px;
+  color: #002444;
+  background-color: #fff;
+  width: 150px;
+  border-radius: 20px;
+  background: #fff;
+  padding: 0 20px;
+  box-shadow: 13px 13px 26px #d6d6d6,
+            -13px -13px 26px #ffffff;
+}
+.sublinks {
+  margin-left: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+.no-sublink {
+  position: absolute;
+  display: none;
+  top: -100%;
+  left: -100%;
+}
+.dropdown-container{
+  display: flex;
+  flex-direction: column;
+}
+.dropdown{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.drop-text{
+  font-size: 13px;
+  flex-shrink: 0;
+  align-items: flex-start;
+}
+@media screen and (min-width: 800px) {
   .mobile-cardonic,
   .close-cardonic,
   .cardonic-nav,
@@ -234,7 +284,13 @@ h2{
     display: none;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
+
+  .bigscreen-cardonic {
+    margin: 40px;
+  }
+}
+@media screen and (max-width: 800px) {
   .links {
     display: none;
   }

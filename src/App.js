@@ -31,7 +31,7 @@ function App() {
     <>
       <NavBar displaySubMenu={displaySubMenu} closeSubMenu={closeSubMenu} />
       {/* <Hero closeSubMenu={closeSubMenu} /> */}
-      <NavBarTwo />
+      <NavBarTwo closeSubMenu={closeSubMenu} />
       <Submenu page={page} location={location} subMenu={subMenu} />
     </>
   );
